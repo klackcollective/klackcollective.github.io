@@ -4,8 +4,8 @@ html, body {
 	padding: 0;
 	font-family: 'Lato', sans-serif;
 	text-align: center;
-	/*background-color: #F5AB35;*/
-	background-color: #d15499;
+	/*background-color: #94396b;*/
+	/*background-color: #d15499;*/
 	color: #fff;
 }
 
@@ -23,6 +23,10 @@ a {
 	margin-top: 2rem;
 }
 
+.btn2 {
+	background-color: #f9ad35;
+}
+
 .btn:hover {
 /*	background-color: #f0aacc;
 	color: #94396b;*/
@@ -33,15 +37,37 @@ a {
 .navbar {
 	/*background-color: #fff;*/
 	margin-bottom: 0;
-	opacity: 0.7;
+	background-color: transparent;
+	border: none;
+	padding: 1.5rem 0 0 2rem;
+	color: #fff;
+	/*opacity: 0.7;*/
+}
+
+.activated {
+	text-decoration: line-through;
+	/*text-decoration: underline;*/
+	color: #000;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #fff;
+    margin-left: 3rem;
+}	
+
+.dot {
+    background: #fff;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+}
+
+hr {
+	width: 95%;
+	margin-top: 1rem;	
 }
 
 .page-content {
-	width: 80%;
-	margin: 0 auto;  
-}
-
-.page-first {	
 	position: fixed; 
 	top: 0; 
 	left: 0; 
@@ -50,12 +76,16 @@ a {
 	min-width: 100%;
 	min-height: 100%;
 	z-index: -1;
-	/*background-color: #CF000F;	*/
+	margin: 0 auto;  
+}
+
+.page-first {	
+	background-color: #94396b;	
 	color: #fff;
 
 	/*Fixa bild*/
-	/* background-image: url("./images/background.png");
-	background-size: cover;*/
+	background-image: url("./images/background.png");
+	background-size: cover;
 }
 
 #logo {
@@ -68,7 +98,7 @@ a {
 }
 
 .txt-front {
-	margin-top: 17rem;
+	margin-top: 14rem;
 	/*width: 15rem;*/
 }
 
@@ -80,32 +110,12 @@ a {
 	line-height: 3rem;
 }
 
-/*.page-first h3 {
-	font-size: 2.2rem;
-  	margin: 0 auto;
-  	margin-top: 2rem;
-}*/
-
-/*.page-first h4 {
-	font-size: 1.6rem;
-	width: 60rem;
-	margin: 0 auto;
-}*/
-
 .page-contact {
-	/*background-color: #F5AB35; gul*/
+	background-color: #F5AB35; gul
 	/*background-color: #f0aacc; ljust*/
 	/*background-color: #af61a3;*/
-	background-color: #d15499;
+	/*background-color: #d15499;*/
 	color: #fff;
-	position: fixed; 
-  	top: 0; 
-  	left: 0; 
-	
-  	/* Preserve aspet ratio */
-  	min-width: 100%;
-  	min-height: 100%;
-  	z-index: -1;
 }
 
 .page-contact h1 {
@@ -113,7 +123,7 @@ a {
 }
 
 .txt-contact {
-	margin-top: 24rem;
+	margin-top: 18rem;
 }
 
 .txt-contact h1 {
@@ -122,6 +132,10 @@ a {
 
 .txt-contact h1 {
 	margin-bottom: 5rem;
+}
+
+#txt-hello {
+	color: #94396b;
 }
 
 .img-phone {
@@ -138,8 +152,14 @@ a {
 	background-image: url("./images/phone2.png");
 }
 
+.page-about {
+	background-color: #d15499;
+}
+
 .div-about {
+	margin: 0 auto;
 	margin-top: 6rem;
+	width: 120rem;
 }
 
 .img-circle {
