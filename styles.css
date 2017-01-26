@@ -60,8 +60,8 @@ a {
 }
 
 .activated {
-	text-decoration: line-through;
-	/*text-decoration: underline;*/
+	/*text-decoration: line-through;*/
+	text-decoration: underline;
 	color: #000;
 }
 
@@ -104,7 +104,7 @@ hr {
 }
 
 #logo {
-	margin: 2rem;
+	margin-top: -1rem;	
 	text-align: left;
 	position: relative;
 }
@@ -152,7 +152,8 @@ hr {
 }
 
 #txt-hello {
-	color: #94396b;
+	/*color: #94396b;*/
+	color: #d45387;
 }
 
 .img-phone {
