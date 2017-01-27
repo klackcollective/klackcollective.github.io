@@ -115,7 +115,8 @@ hr {
 }
 
 .txt-front {
-	margin-top: 13rem;
+	/*margin-top: 13rem;*/
+	margin-top: 7rem;
 	/*width: 15rem;*/
 }
 
@@ -137,7 +138,8 @@ hr {
 }
 
 .txt-contact {
-	margin-top: 18rem;
+	/*margin-top: 18rem;*/
+	margin-top: 12rem;
 }
 
 .txt-contact h1 {
@@ -167,7 +169,7 @@ hr {
 }
 
 .page-about {
-	background-color: #fbc5d0;
+	background-color: #fbc5d0; 
 }
 
 .div-about {
