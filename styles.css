@@ -2,210 +2,124 @@ html, body {
 	width: 100%;
 	margin: 0 auto;
 	padding: 0;
-	font-family: 'Lato', sans-serif;
+	font-family: 'Raleway', sans-serif;
 	text-align: center;
-	color: #000;
+	color: #cccccc;
 	position: relative;
 	height: 100%;
-
-	/*font-family: 'Source Sans Pro', sans-serif;
-	font-family: 'Overpass', sans-serif;
-	font-family: 'Raleway', sans-serif;
-	font-family: 'Quicksand', sans-serif;
-	font-family: 'Josefin Sans', sans-serif; fin 
-	font-family: 'Alegreya Sans', sans-serif; 
-	font-family: 'Josefin Slab', serif;
-	font-family: 'Didact Gothic', sans-serif; fin */
-	/*font-family: 'Hind Vadodara', sans-serif;*/
-	/*font-family: 'PT Mono', monospace;*/
+	background-color: #0d0d0d;
 }
 
-a {
-	color: #fff;
-	cursor: pointer;
+.div-start img {
+	-webkit-filter: invert(100%);
+    filter: invert(100%);
 }
 
-.btn {
-	/*background-color: #af61a3;*/
-	background-color: #de7c90;
-	cursor: pointer;
-	color: #fff;
-	border: none;
-	margin-top: 2rem;
-}
-
-.btn2 {
-	background-color: #d1667c;
-}
-
-.btn:hover {
-/*	background-color: #f0aacc;
-	color: #94396b;*/
-	background-color: #ff88a0;
+i {
 	color: #fff;
 }
 
-.navbar {
-	/*background-color: #fff;*/
-	margin-bottom: 0;
-	/*background-color: transparent;*/
-	background-color: #fff;
-	border: none;
-	padding: 1.5rem 0 0.8rem 2rem;
-	/*color: #000;*/
-	/*opacity: 0.7;*/
+.icon {
+	margin-top: 18rem;
 }
 
-.activated {
-	/*text-decoration: line-through;*/
-	text-decoration: underline;
-	color: #000;
-}
-
-.navbar-default .navbar-nav>li>a {
-    color: #000;
-    background-color: #fff;
-    margin-left: 3rem;
+.intro {
+	color: #0d0d0d;
 }	
 
-.dot {
-    background: #fff;
-    width: 6px;
-    height: 6px;
+.div-start {
+	animation: mymove1 0.8s;
+	width: 50rem;
+    height: 15rem;
+    /*background-color: red;*/
+
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    margin: auto;
+}
+
+.logo {
+
+}
+
+.txt-sum {
+    animation: 1s ease 0s normal forwards 1 fadein;
+    font-size: 18px;
+    color: #808080;
+    margin-top: 2rem;
+}
+
+@keyframes mymove1 {
+    from {
+      transform: translateY(45px);
+      opacity: 0;
+  }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+
+@keyframes fadein{
+    0% { opacity:0; }
+    66% { opacity:0; }
+    100% { opacity:1; }
+}
+
+
+.div-sum {
+	width: 100%;
+    height: 10rem;
+	background-color: #000;
+	position: absolute;
+	margin-top: 60%;
+}
+
+.img-circle {
+	height: 18rem;
+	width: 18rem;
     border-radius: 50%;
 }
 
-hr {
-	width: 95%;
-	margin-top: 1rem;	
-}
-
-.page-content {
-	position: fixed; 
-	top: 0; 
-	left: 0; 
-
-	height: auto;
-	margin: 0 auto -60px; 
-
-	/* Preserve aspet ratio */
-	min-width: 100%;
-	min-height: 100%;
-	/*z-index: -1;*/
-	/*margin: 0 auto;  */
-}
-
-.page-first {	
-	/*background-color: #fbd4dc;	*/
-	background-color: #fbc5d0;
-	color: #000;
-	/*background-image: url("./images/bgfur.png");*/
-	/*background-size: cover;*/
-}
-
-#logo {
-	margin-top: -1rem;	
-	text-align: left;
-	position: relative;
-}
-
-.page-first h1 {
-	font-size: 18rem;
-  	margin: 0 auto;
-}
-
-.txt-front {
-	margin-top: 12rem;
-	/*width: 15rem;*/
-}
-
-.txt-front h4 {
+.div-about {
 	margin: 0 auto;
-	margin-top: 1rem;
-	margin-bottom: 2rem;
-	width: 500px;
-	line-height: 3rem;
+	margin-top: 50rem;
+	width: 100%;
+	height: 32rem;
+	padding: 5rem 4rem 0 4rem;
+	background-color: #000;
 }
 
-.page-contact {
-	background-color: #fbc5d0; 
-	color: #000;
-}
-
-.page-contact h1 {
-	font-size: 6rem;
-}
-
-.txt-contact {
-	/*margin-top: 18rem;*/
-	margin-top: 12rem;
-}
-
-.txt-contact h1 {
-	margin-bottom: 5rem;
-}
-
-.txt-contact h1 {
-	margin-bottom: 5rem;
-}
-
-#txt-hello {
-	color: #d45387;
-}
-
-.img-phone {
-	background-color: #fff;
-	display: block;
-	height: 20rem;
-    margin: auto;
-    width: 20rem;
-    background-image: url("./images/phone1.png");
-	background-size: cover;
-}
-
-.img-phone:hover {
-	background-image: url("./images/phone2.png");
+.div-about h3 {
+	margin-top: 2rem; 
 }
 
 .page-about {
 	background-color: #fbc5d0; 
 }
 
-.div-about {
-	margin: 0 auto;
+.div-contact {
 	margin-top: 6rem;
-	width: 1150px;
+	margin-bottom: 6rem;
 }
 
-.img-circle {
-	height: 27rem;
-	width: 28rem;
-    border-radius: 50%;
-}
-
-.txt-aboutintro {
-	width: 50rem;
-	margin: 0 auto;
-	margin-top: 2rem; 
-}
-
-.txt-about {
-	width: 25rem;
-	margin: 0 auto;
-}
-
-.txt-email {
-	margin-top: 3rem;
-}
-
-.footer {
-	clear: both;
+.div-footer {
 	width: 100%;
-	position: fixed;
-	/*z-index: 10;*/
-	bottom: 0;
-	height: 50px;
+    height: 4rem;
 	background-color: #000;
-	color: #fff;
-	padding: 15px 0 0 0;
+	position: absolute;
+	margin-top: 100%; 
 }
+
+.div-footer p {
+	margin-top: 1.5rem; 
+}
+
+
+
+
+
